@@ -13,18 +13,8 @@
 		EA1EF3F41B809A2C00546046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1EF3F21B809A2C00546046 /* Main.storyboard */; };
 		EA1EF3F61B809A2C00546046 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1EF3F51B809A2C00546046 /* Images.xcassets */; };
 		EA1EF3F91B809A2C00546046 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1EF3F71B809A2C00546046 /* LaunchScreen.xib */; };
-		EA1EF4051B809A2C00546046 /* PaintCoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1EF4041B809A2C00546046 /* PaintCoolTests.m */; };
+		EA1EF4101B80B3C500546046 /* PASettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1EF40F1B80B3C500546046 /* PASettingView.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		EA1EF3FF1B809A2C00546046 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EA1EF3DD1B809A2C00546046 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EA1EF3E41B809A2C00546046;
-			remoteInfo = PaintCool;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EA1EF3E51B809A2C00546046 /* PaintCool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaintCool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,20 +27,14 @@
 		EA1EF3F31B809A2C00546046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA1EF3F51B809A2C00546046 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EA1EF3F81B809A2C00546046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		EA1EF3FE1B809A2C00546046 /* PaintCoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaintCoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1EF4031B809A2C00546046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA1EF4041B809A2C00546046 /* PaintCoolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintCoolTests.m; sourceTree = "<group>"; };
+		EA1EF40E1B80B3C500546046 /* PASettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PASettingView.h; path = ../PASettingView.h; sourceTree = "<group>"; };
+		EA1EF40F1B80B3C500546046 /* PASettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PASettingView.m; path = ../PASettingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EA1EF3E21B809A2C00546046 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA1EF3FB1B809A2C00546046 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				EA1EF3E51B809A2C00546046 /* PaintCool.app */,
-				EA1EF3FE1B809A2C00546046 /* PaintCoolTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +64,8 @@
 		EA1EF3E71B809A2C00546046 /* PaintCool */ = {
 			isa = PBXGroup;
 			children = (
+				EA1EF40E1B80B3C500546046 /* PASettingView.h */,
+				EA1EF40F1B80B3C500546046 /* PASettingView.m */,
 				EA1EF3EC1B809A2C00546046 /* AppDelegate.h */,
 				EA1EF3ED1B809A2C00546046 /* AppDelegate.m */,
 				EA1EF3EF1B809A2C00546046 /* ViewController.h */,
@@ -139,39 +124,17 @@
 			productReference = EA1EF3E51B809A2C00546046 /* PaintCool.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EA1EF3FD1B809A2C00546046 /* PaintCoolTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EA1EF40B1B809A2C00546046 /* Build configuration list for PBXNativeTarget "PaintCoolTests" */;
-			buildPhases = (
-				EA1EF3FA1B809A2C00546046 /* Sources */,
-				EA1EF3FB1B809A2C00546046 /* Frameworks */,
-				EA1EF3FC1B809A2C00546046 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EA1EF4001B809A2C00546046 /* PBXTargetDependency */,
-			);
-			name = PaintCoolTests;
-			productName = PaintCoolTests;
-			productReference = EA1EF3FE1B809A2C00546046 /* PaintCoolTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		EA1EF3DD1B809A2C00546046 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = iMac309;
 				TargetAttributes = {
 					EA1EF3E41B809A2C00546046 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					EA1EF3FD1B809A2C00546046 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = EA1EF3E41B809A2C00546046;
 					};
 				};
 			};
@@ -189,7 +152,6 @@
 			projectRoot = "";
 			targets = (
 				EA1EF3E41B809A2C00546046 /* PaintCool */,
-				EA1EF3FD1B809A2C00546046 /* PaintCoolTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,13 +167,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA1EF3FC1B809A2C00546046 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -219,29 +174,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1EF4101B80B3C500546046 /* PASettingView.m in Sources */,
 				EA1EF3F11B809A2C00546046 /* ViewController.m in Sources */,
 				EA1EF3EE1B809A2C00546046 /* AppDelegate.m in Sources */,
 				EA1EF3EB1B809A2C00546046 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA1EF3FA1B809A2C00546046 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA1EF4051B809A2C00546046 /* PaintCoolTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EA1EF4001B809A2C00546046 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EA1EF3E41B809A2C00546046 /* PaintCool */;
-			targetProxy = EA1EF3FF1B809A2C00546046 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EA1EF3F21B809A2C00546046 /* Main.storyboard */ = {
@@ -284,6 +224,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -351,7 +292,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PaintCool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PAM.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -361,41 +304,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PaintCool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PAM.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		EA1EF40C1B809A2C00546046 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PaintCoolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaintCool.app/PaintCool";
-			};
-			name = Debug;
-		};
-		EA1EF40D1B809A2C00546046 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PaintCoolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaintCool.app/PaintCool";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -418,14 +329,7 @@
 				EA1EF40A1B809A2C00546046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		EA1EF40B1B809A2C00546046 /* Build configuration list for PBXNativeTarget "PaintCoolTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA1EF40C1B809A2C00546046 /* Debug */,
-				EA1EF40D1B809A2C00546046 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
